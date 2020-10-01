@@ -1,5 +1,5 @@
 # exercism
 My exercism exercises
-- [ ] parallel-letter-frequency
+- [x] parallel-letter-frequency
 - [ ] robot-simulator
 - [ ] error-handling
