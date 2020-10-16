@@ -1,4 +1,3 @@
 .busted
-.exercism/
 go.mod
 go.sum
