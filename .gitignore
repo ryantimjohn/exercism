@@ -1,3 +1,4 @@
 .busted
 go.mod
 go.sum
+fortran/*/build/*
