@@ -10,16 +10,14 @@ func IsIsogram(s string) bool {
 	if len(s) == 0 {
 		return true
 	}
-	counts := make(map[rune]int)
+	counts := make(map[rune]bool)
 	upper := strings.ToUpper(s)
 	for _, l := range upper {
 		if l >= 65 && l <= 90 {
-			counts[l]++
-		}
-	}
-	for _, v := range counts {
-		if v > 1 {
-			return false
+			if _, ok := counts[l]; ok {
+				return false
+			}
+			counts[l] = true
 		}
 	}
 	return true
