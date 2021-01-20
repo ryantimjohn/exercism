@@ -1,7 +1,7 @@
 module Acronym
   def self.abbreviate(phrase)
-    words = phrase.split(/[ |-]+/)
-    first_letters = words.map { |w| w[0].upcase }
-    first_letters.join('')
+    first_letters = ''
+    phrase.scan(/\b[a-zA-Z]/) { |l| first_letters += l }
+    first_letters.upcase
   end
 end
